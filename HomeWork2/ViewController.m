@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ISSGuest.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
+    ISSGuest *guest = [[ISSGuest alloc] init];
+    
+    [guest makeOrder];
 }
 
 

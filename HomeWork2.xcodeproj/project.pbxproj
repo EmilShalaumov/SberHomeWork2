@@ -13,6 +13,9 @@
 		E4EF693F23467A160087ECD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4EF693E23467A160087ECD6 /* Assets.xcassets */; };
 		E4EF694223467A160087ECD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4EF694023467A160087ECD6 /* LaunchScreen.storyboard */; };
 		E4EF694523467A160087ECD6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4EF694423467A160087ECD6 /* main.m */; };
+		E4EF694F23467B590087ECD6 /* ISSGuest.m in Sources */ = {isa = PBXBuildFile; fileRef = E4EF694E23467B590087ECD6 /* ISSGuest.m */; };
+		E4EF695223467B6D0087ECD6 /* ISSWaiter.m in Sources */ = {isa = PBXBuildFile; fileRef = E4EF695123467B6D0087ECD6 /* ISSWaiter.m */; };
+		E4EF695523467B900087ECD6 /* ISSKitchen.m in Sources */ = {isa = PBXBuildFile; fileRef = E4EF695423467B900087ECD6 /* ISSKitchen.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,14 @@
 		E4EF694123467A160087ECD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4EF694323467A160087ECD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4EF694423467A160087ECD6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E4EF694D23467B590087ECD6 /* ISSGuest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISSGuest.h; sourceTree = "<group>"; };
+		E4EF694E23467B590087ECD6 /* ISSGuest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ISSGuest.m; sourceTree = "<group>"; };
+		E4EF695023467B6D0087ECD6 /* ISSWaiter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISSWaiter.h; sourceTree = "<group>"; };
+		E4EF695123467B6D0087ECD6 /* ISSWaiter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ISSWaiter.m; sourceTree = "<group>"; };
+		E4EF695323467B900087ECD6 /* ISSKitchen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISSKitchen.h; sourceTree = "<group>"; };
+		E4EF695423467B900087ECD6 /* ISSKitchen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ISSKitchen.m; sourceTree = "<group>"; };
+		E4EF699B2348864A0087ECD6 /* WaiterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaiterProtocol.h; sourceTree = "<group>"; };
+		E4EF699C234889170087ECD6 /* KitchenProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KitchenProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +69,8 @@
 		E4EF693423467A150087ECD6 /* HomeWork2 */ = {
 			isa = PBXGroup;
 			children = (
+				E4EF695723467D6B0087ECD6 /* Models */,
+				E4EF694B23467A320087ECD6 /* Protocols */,
 				E4EF693523467A150087ECD6 /* AppDelegate.h */,
 				E4EF693623467A150087ECD6 /* AppDelegate.m */,
 				E4EF693823467A150087ECD6 /* ViewController.h */,
@@ -69,6 +82,28 @@
 				E4EF694423467A160087ECD6 /* main.m */,
 			);
 			path = HomeWork2;
+			sourceTree = "<group>";
+		};
+		E4EF694B23467A320087ECD6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E4EF699B2348864A0087ECD6 /* WaiterProtocol.h */,
+				E4EF699C234889170087ECD6 /* KitchenProtocol.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		E4EF695723467D6B0087ECD6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E4EF694D23467B590087ECD6 /* ISSGuest.h */,
+				E4EF694E23467B590087ECD6 /* ISSGuest.m */,
+				E4EF695023467B6D0087ECD6 /* ISSWaiter.h */,
+				E4EF695123467B6D0087ECD6 /* ISSWaiter.m */,
+				E4EF695323467B900087ECD6 /* ISSKitchen.h */,
+				E4EF695423467B900087ECD6 /* ISSKitchen.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +176,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4EF694F23467B590087ECD6 /* ISSGuest.m in Sources */,
+				E4EF695223467B6D0087ECD6 /* ISSWaiter.m in Sources */,
+				E4EF695523467B900087ECD6 /* ISSKitchen.m in Sources */,
 				E4EF693A23467A150087ECD6 /* ViewController.m in Sources */,
 				E4EF694523467A160087ECD6 /* main.m in Sources */,
 				E4EF693723467A150087ECD6 /* AppDelegate.m in Sources */,
